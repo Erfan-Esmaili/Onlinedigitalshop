@@ -1,0 +1,88 @@
+@import url(../content/custom.css);
+
+#all_content{
+  background-color: var(--bg-Color);
+  max-height: 130vh !important;
+}
+
+.buy__process{
+  height: 10rem;
+}
+.buy__process h3, 
+.buy__process h5,
+.buy__process a {
+  color: #BBD0F8;
+  text-decoration: none;
+}
+
+.fa-trash{
+  cursor: pointer;
+}
+
+
+.accordion-button{
+  display: flex; /* تبدیل دکمه به فلکس کانتینر */
+  justify-content: space-between; /* توزیع فضا بین محتوای متنی و فلش */
+  align-items: center; /* هم‌تراز کردن عمودی محتوا و فلش */
+  /* سایر استایل‌های دکمه آکاردئون */
+}
+
+.accordion-button::after{
+  margin-left: 0;
+  background-size: 0.7rem !important;
+}
+
+/* برای اصلاح محل قرارگیری لیبل در حالت راست‌به‌چپ */
+.form-floating > label {
+  right: 0.75rem;
+  left: auto;
+  text-align: right;
+  color: var(--bs-secondary);
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  transform: scale(0.85) translateY(-2rem) translateX(0.15rem);
+  transition: all 0.3s ease;
+  color: var(--bs-blue);
+}
+
+
+.select{
+  background-position:1rem;
+}
+
+#order_comments{
+  height: 7rem;
+  border: 1px solid var(--bs-border-color);
+}
+
+
+@media (max-width:768px){
+  .table thead{
+    display: none;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #666;
+  }
+
+  .table td:nth-child(1){
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+.table td{
+  display: flex;
+  justify-content: space-between;
+}
+}
+@media (min-width:769px){
+  .product__item{
+    width: 135%;
+    /* display: contents; */
+  } 
+}

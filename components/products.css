@@ -1,0 +1,73 @@
+.suggestions_content {
+  background-image: linear-gradient(to bottom, #0456c2, #0080fd);
+  /* height: 510px; */
+}
+
+.menu_auto {
+  width: 40px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  left: 0px;
+  top: 36px;
+  z-index: 999;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  background-color: whitesmoke;
+}
+.menu_auto abbr{
+text-decoration: none;
+}
+.item_content:hover .menu_auto {
+  left: 20px;
+  opacity: 1;
+}
+@media (max-width:768px){
+.menu_auto{
+  left: 20px;
+  opacity: 1;
+  z-index: 1;
+}}
+
+.suggestions_img {
+  /* height: 235px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+}
+.suggestions_img img {
+  height: 255px;
+  object-fit: contain;
+}
+.suggestions_txt {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 20px;
+  padding: 1rem 1rem 0 1rem;
+}
+.suggestions_txt p,
+span {
+  margin: 0;
+}
+.span_content {
+  font-size: 14px;
+}
+.suggestions_txt p:nth-child(2) {
+  font-size: 14px;
+}
+
+.suggestions_header h6 {
+  font-size: 19px;
+}
+.suggestions_header button {
+  font-size: 14px;
+  background-color: #dbe3f9;
+}

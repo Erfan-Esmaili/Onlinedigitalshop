@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" sizes="32x32" href="img/mega-electronicslogo.png" type="image/png">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> 
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- izitoast -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/basketpage.css">
+  <title>سبدخرید</title>
+</head>
+
+<body>
+
+  <site-header></site-header>
+  <div id="all_content" class="col-lg-11 px-4 mt-xl-3 float-start">
+
+
+    <div class="buy__process bg-primary my-3 rounded rounded-3">
+
+      <div class="d-flex justify-content-center align-items-center w-100 h-100 gap-3">
+        <h3><a href="#" id="buyBasketHeader" class="text-white">سبدخرید</a></h3>
+        <h5><i class="fa-solid fa-arrow-left"></i></h5>
+        <h3><a id="settlementHeader" href="#">تسویه حساب</a></h3>
+        <h5><i class="fa-solid fa-arrow-left"></i></h5>
+        <h3>تکمیل سفارش</h3>
+      </div>
+
+
+    </div>
+
+    <div class="content row  pb-5">
+      <!-- right side (show product) -->
+      <div class="col-lg-8 col-12 showproduct">
+
+
+        <!-- سبد خرید و نشان دادن محصولات -->
+          <div class="product__choose__box overflow-hidden rounded rounded-3 px-2 bg-white overflow-hidden">
+            <table class="table p-2">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-center">محصول</th>
+                  <th scope="col" class="text-center">قیمت محصول</th>
+                  <th scope="col" class="text-center">تعداد</th>
+                  <th scope="col" class="text-center">قیمت کل</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+
+              <tbody class="table-group-divider">
+                  <!-- !!محصولات در جدول در این قسمت از local storage گرفته میشوند -->
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+<!-- loading -->
+<div id="loading" class="d-flex justify-content-center align-items-center gap-2 d-none">
+  <div class="spinner-grow text-primary"  style="width: 3rem; height: 3rem;" role="status">
+     <span class="visually-hidden">Loading...</span>
+   </div>
+   <div class="text-primary fs-5">لطفاً صبر کنید...</div>
+   </div>
+
+
+<!-- تسویه حساب و اینپوت های مشخصات -->
+
+ <form  class="information__form row needs-validation bg-white rounded mt-0 px-2 py-4 g-3 d-none" novalidate>
+
+  <div class="form-floating col-sm-6 col-12">
+    <input type="text" class="form-control" id="floatingInput validationServer01" placeholder="name@example.com" autofocus>
+    <label for="floatingInput validationServer01" class="form-label">نام <span class="text-danger">*</span></label>
+    <div class="valid-feedback">
+      معتبر
+    </div>
+    <div class="invalid-feedback">
+      لطفا مقدار معتبری وارد کنید!
+    </div>
+  </div>
+  <div class="form-floating col-sm-6 col-12">
+    <input type="text" class="form-control" id="floatingInput validationServer01" placeholder="name@example.com">
+    <label for="floatingInput validationServer01" class="form-label">نام خانوادگی <span class="text-danger">*</span></label>
+    <div class="valid-feedback">
+      معتبر
+    </div>
+    <div class="invalid-feedback">
+      لطفا مقدار معتبری وارد کنید!
+    </div>
+  </div>
+  <div class="form-floating col-sm-6 col-12">
+    <input type="tel" class="form-control  type__Tel" id="floatingInput validationServer01" placeholder="name@example.com">
+    <label for="floatingInput validationServer01" class="form-label">شماره تماس <span class="text-danger">*</span></label>
+    <div class="valid-feedback">
+      معتبر
+    </div>
+    <div class="invalid-feedback">
+      لطفا مقدار معتبری وارد کنید!
+    </div>
+  </div>
+
+  <div class="form-floating col-sm-6 col-12">
+    <input type="tel" class="form-control" id="nationalNumber" placeholder="name@example.com">
+    <label class="form-label">کدملی <span class="text-danger">*</span></label>
+    <div class="valid-feedback">
+      معتبر
+    </div>
+    <div class="invalid-feedback">
+      لطفا مقدار معتبری وارد کنید!
+    </div>
+  </div>
+  <div class="col-sm-6 col-12">
+    <select class="form-select p-3 select" id="city" aria-label="Default select example" required>
+      <option value="" disabled selected>انتخاب استان</option>
+      <option value="آذربایجان شرقی">آذربایجان شرقی</option>
+      <option value="آذربایجان غربی">آذربایجان غربی</option>
+      <option value="اردبیل">اردبیل</option>
+      <option value="اصفهان">اصفهان</option>
+      <option value="البرز">البرز</option>
+      <option value="ایلام">ایلام</option>
+      <option value="بوشهر">بوشهر</option>
+      <option value="تهران">تهران</option>
+      <option value="چهارمحال و بختیاری">چهارمحال و بختیاری</option>
+      <option value="خراسان جنوبی">خراسان جنوبی</option>
+      <option value="خراسان رضوی">خراسان رضوی</option>
+      <option value="خراسان شمالی">خراسان شمالی</option>
+      <option value="خوزستان">خوزستان</option>
+      <option value="زنجان">زنجان</option>
+      <option value="سمنان">سمنان</option>
+      <option value="سیستان و بلوچستان">سیستان و بلوچستان</option>
+      <option value="فارس">فارس</option>
+      <option value="قزوین">قزوین</option>
+      <option value="قم">قم</option>
+      <option value="کردستان">کردستان</option>
+      <option value="کرمان">کرمان</option>
+      <option value="کرمانشاه">کرمانشاه</option>
+      <option value="کهگیلویه و بویراحمد">کهگیلویه و بویراحمد</option>
+      <option value="گلستان">گلستان</option>
+      <option value="گیلان">گیلان</option>
+      <option value="لرستان">لرستان</option>
+      <option value="مازندران">مازندران</option>
+      <option value="مرکزی">مرکزی</option>
+      <option value="هرمزگان">هرمزگان</option>
+      <option value="همدان">همدان</option>
+      <option value="یزد">یزد</option>
+    </select>
+  </div>
+
+
+  <div class="col-sm-6 col-12">
+    <select class="form-select p-3 select" id="town" aria-label="Default select example" required>
+      <option value="" selected>ابتدا استان را انتخاب کنید</option>
+    </select>
+    
+  </div>
+
+  <div class="form-floating col-12">
+    <input type="text" class="form-control" placeholder="name@example.com">
+    <label for="floatingInput validationServer01" class="form-label" >آدرس <span class="text-danger">*</span></label>
+  </div>
+  <textarea id="order_comments" class="rounded p-2" placeholder="یادداشت ها درباره سفارش شما ، برای مثال نکات مهم برای تحویل بار "></textarea>
+
+  <button class="col-12 btn btn-primary">پرداخت</button>
+</form>
+
+
+
+      </div>
+
+
+
+
+      <!-- قسمت مجموع سبد خرید و سوالات متداول -->
+      <div class="col-lg-4 col-12 mt-3 mt-lg-0 shopping__cart__total d-flex flex-column gap-4">
+        <div class="w-100 rounded p-3 bg-white">
+          <h3>مجموع سبدخرید</h3>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <span>قیمت کل</span>
+            <div class="text-secondary">
+              <span class="total__price">0</span><span>تومان</span>
+            </div>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between align-items-center">
+            <h3>مجموع</h3>
+            <div class="text-primary">
+              <h5 class="d-inline-block total__price fw-bolder">0</h5><span>تومان</span>
+            </div>
+          </div>
+
+          <button id="continueToPay" class="btn btn-primary fw-bold p-3 mt-3 col-12">ادامه جهت تسویه حساب</button>
+        </div>
+
+        <!-- سوالات متداول -->
+        <div class="bg-white rounded p-3">
+          <h3>سوالات متداول</h3>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header  text-nowrap">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  خرید من هنوز نرسیده. بسته من کجاست؟
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</div>
+              </div>
+            </div>
+            <div class="accordion-item ">
+              <h2 class="accordion-header text-nowrap">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+               
+								آیا تحویل در روز های تعطیل هم دارید؟							
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</div>
+              </div>
+            </div>
+            <div class="accordion-item  text-nowrap">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                
+								آیا به کد پستی من ارسال می شود؟							
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                  آیا تحویل یک روزه شامل همه محصولات می شود؟							                </button>
+              </h2>
+              <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</div>
+              </div>
+            </div>
+            <div class="accordion-item  text-nowrap">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                  آیا زمان تحویل نیاز است خودم حاضر باشم؟							              </h2>
+              <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+<site-footer></site-footer>
+
+  </div>
+
+
+
+
+
+
+  </div>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- iziToast -->
+<script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+
+
+  <script type="module" src="./js/basketpage.js"></script>
+</body>
+
+</html>

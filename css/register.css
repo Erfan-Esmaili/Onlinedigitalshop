@@ -1,0 +1,22 @@
+@import url(../content/custom.css);
+
+
+.container-fluid{
+  background-color: var(--bg-Color);
+  height: inherit;
+}
+.img_containar{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.form-control{
+  padding: 10px;
+  outline: none;
+  border-radius: 30px;
+}
+
+.title{
+  padding: 2rem 4rem 0 0;
+}
+

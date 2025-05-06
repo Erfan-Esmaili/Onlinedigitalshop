@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: YekanBakh, sans-serif;
+}
+
+/* font */
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Yekanbakh/YekanBakh-Medium.f7360956.woff") format("woff");
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Yekanbakh/YekanBakh-Bold.bbd877a3.woff") format("woff");
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Yekanbakh/YekanBakh-Heavy.630c4fa4.woff") format("woff");
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Yekanbakh/YekanBakh-Fat.e508fcc6.woff") format("woff");
+}
+
+/* end font */
+
+:root {
+  --main-blur-color: #1c61e7;
+  --bg-Color: #f6f6f6;
+  --font-size-15px:15px;  
+}
+#all_content {
+  width: 95%;
+  overflow-x: clip;
+  position: relative;
+  top: 8rem;
+  max-height: 100vh;
+}
+@media (max-width:992px){
+  #all_content{
+    width: 100%;
+  }
+}
+
+.container-fluid{
+  background-color: var(--bg-Color);
+}

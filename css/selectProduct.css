@@ -1,0 +1,67 @@
+@import url(../content/custom.css);
+
+table td {
+  text-align: center;
+}
+
+tbody th{
+  text-wrap: nowrap;
+}
+.right__column {
+  height: fit-content;
+}
+.col {
+  cursor: pointer;
+}
+.img__content {
+  overflow: hidden;
+}
+.mainImg {
+  transform-origin: center center;
+}
+
+textarea {
+  resize: none;
+  height: 8rem;
+  overflow: hidden;
+}
+.like__icon:hover {
+  color: green;
+  cursor: pointer;
+}
+.dislike__icon:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* محصولات مشابه */
+
+.same__products {
+  background-color: var(--bs-gray-200) !important;
+  width: 105%;
+}
+
+site-product .suggestions_txt {
+  height: 100%;
+}
+site-product p[slot="name-product"] {
+  /* margin-top: 3rem; */
+  margin-bottom: 0;
+  text-wrap: nowrap;
+  font-size: clamp(18px, 1.2vw, 20px);
+}
+site-product span[slot="type"] {
+  font-size: 15px;
+  color: rgba(var(--bs-secondary-rgb), 1);
+}
+
+site-product #price {
+  display: inline-block;
+  font-size: 20px;
+  color: rgba(var(--bs-primary-rgb), 1);
+  font-weight: bold;
+}
+site-product span:last-child {
+  color: rgba(var(--bs-primary-rgb), 1);
+  font-size: 16px;
+}
