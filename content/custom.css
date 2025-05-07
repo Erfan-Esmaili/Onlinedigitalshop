@@ -13,41 +13,25 @@ body {
   font-family: YekanBakh;
   font-style: normal;
   font-weight: normal;
-<<<<<<< HEAD
-  src: url("../fonts/Yekanbakh/YekanBakh-Medium.f7360956.woff") format("woff");
-=======
   src: url("../fonts/YekanBakh/YekanBakh-Medium.f7360956.woff") format("woff");
->>>>>>> ff0c9da0222ac3faae8bf0014cc93140a844ae06
 }
 @font-face {
   font-family: YekanBakh;
   font-style: normal;
   font-weight: bold;
-<<<<<<< HEAD
-  src: url("../fonts/Yekanbakh/YekanBakh-Bold.bbd877a3.woff") format("woff");
-=======
   src: url("../fonts/YekanBakh/YekanBakh-Bold.bbd877a3.woff") format("woff");
->>>>>>> ff0c9da0222ac3faae8bf0014cc93140a844ae06
 }
 @font-face {
   font-family: YekanBakh;
   font-style: normal;
   font-weight: 600;
-<<<<<<< HEAD
-  src: url("../fonts/Yekanbakh/YekanBakh-Heavy.630c4fa4.woff") format("woff");
-=======
   src: url("../fonts/YekanBakh/YekanBakh-Heavy.630c4fa4.woff") format("woff");
->>>>>>> ff0c9da0222ac3faae8bf0014cc93140a844ae06
 }
 @font-face {
   font-family: YekanBakh;
   font-style: normal;
   font-weight: 600;
-<<<<<<< HEAD
-  src: url("../fonts/Yekanbakh/YekanBakh-Fat.e508fcc6.woff") format("woff");
-=======
   src: url("../fonts/YekanBakh/YekanBakh-Fat.e508fcc6.woff") format("woff");
->>>>>>> ff0c9da0222ac3faae8bf0014cc93140a844ae06
 }
 
 /* end font */
