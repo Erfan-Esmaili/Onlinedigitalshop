@@ -13,25 +13,25 @@ body {
   font-family: YekanBakh;
   font-style: normal;
   font-weight: normal;
-  src: url("/Onlinedigitalshop/fonts/Yekanbakh/YekanBakh-Medium.woff") format("woff");
+  src: url("../fonts/Yekanbakh/YekanBakh-Medium.f7360956.woff") format("woff");
 }
 @font-face {
   font-family: YekanBakh;
   font-style: normal;
   font-weight: bold;
-  src: url("/Onlinedigitalshop/fonts/Yekanbakh/YekanBakh-Bold.woff") format("woff");
+  src: url("../fonts/Yekanbakh/YekanBakh-Bold.bbd877a3.woff") format("woff");
 }
 @font-face {
   font-family: YekanBakh;
   font-style: normal;
   font-weight: 600;
-  src: url("/Onlinedigitalshop/fonts/Yekanbakh/YekanBakh-Heavy.woff") format("woff");
+  src: url("../fonts/Yekanbakh/YekanBakh-Heavy.630c4fa4.woff") format("woff");
 }
 @font-face {
   font-family: YekanBakh;
   font-style: normal;
   font-weight: 600;
-  src: url("/Onlinedigitalshop/fonts/Yekanbakh/YekanBakh-Fat.woff") format("woff");
+  src: url("../fonts/Yekanbakh/YekanBakh-Fat.e508fcc6.woff") format("woff");
 }
 
 /* end font */

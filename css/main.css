@@ -395,9 +395,6 @@ li {
   justify-content: space-evenly;
   column-gap: 1rem;
 }
-.left_group_row_menu > div {
-  /* width: 27%; */
-}
 .fa-user {
   color: #000;
 }
@@ -412,7 +409,6 @@ li {
 }
 .icons_like_exchange {
   display: flex;
-  /* justify-content: space-evenly; */
   gap: 1rem;
 }
 .icons_like_exchange i {
@@ -491,11 +487,7 @@ li {
   background: #fff;
   border-radius: 10px;
   padding: 15px;
-  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
   text-align: center;
-  /* height: 100%;  */
-  /* display: grid;
-  grid-row: 2/3; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -527,14 +519,6 @@ li {
 }
 
 /* small banner */
-
-/* .small_banner_img{
-  width: 100%;
-  height: 150px;
-  background-image: url(../img/white-joy-cons.jpg);
-  background-size: 100%;
-  background-position: center;
-} */
 
 .small_banner_img {
   width: 85%;
@@ -584,12 +568,11 @@ li {
   flex-direction: column;
   align-items: center;
 }
-.txt_and_btn p,
-button {
+.txt_and_btn p {
   margin-left: 1rem;
   font-size: clamp(13px, 1.2vw, 20px);
 }
-.txt_and_btn button {
+.txt_and_btn a {
   font-size: 12px;
 }
 
@@ -754,7 +737,6 @@ span {
 }
 .blog_item:hover .blog_img::before {
   transform: scale(1.07);
-  transition: all 0.5s ease;
 }
 .blog_img {
   width: 100%;
@@ -774,6 +756,8 @@ span {
   height: 100%;
   background-position: center;
   background-size: cover;
+  transition: all 0.4s ease;
+
 }
 .blog_item:nth-child(1) .blog_img::before {
   background-image: url(../img/cameras-for-street-photography-entry-header-opt.jpg);
