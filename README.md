@@ -36,23 +36,33 @@
 ![VSCode](https://img.shields.io/badge/VSCode-Editor-%23007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 
+<br>
 
 
 
 
-## Screenshots
+#  📷Screenshots
 
 ### 🏠 Homepage
 ![Mobile View](screenshots/view1.png)
+
+<br>
+
 
 ### 🛒 Shopping Cart
 ![Mobile View](screenshots/view0.png)
 ![Mobile View](screenshots/view11.png)
 
+
+<br>
+
+
 ### 🛍️ Product Page
 ![Mobile View](screenshots/view4.png)
 ![Mobile View](screenshots/view7.png)
 ![Mobile View](screenshots/view6.png)
+
+<br>
 
 ### 📝 Signup Page
 ![Mobile View](screenshots/view5.png)
