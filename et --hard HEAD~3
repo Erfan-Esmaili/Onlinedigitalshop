@@ -1,0 +1,104 @@
+[33mcommit a8e1229389fdade16b57e1d2460a84747b857e2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: erfan <erfan.esmaili1382@gmail.com>
+Date:   Fri May 9 20:36:08 2025 +0330
+
+    Delete screenshots/Screenshot 2025-05-09 131114.png
+
+[33mcommit 729f21bf3ec40ef2a3333055deabe6f3754df21a[m
+Author: erfan <erfan.esmaili1382@gmail.com>
+Date:   Fri May 9 20:30:42 2025 +0330
+
+    Rename screenshot file
+
+[33mcommit e080145c00e0d41d69dcfc9b6c6f34e32a18b416[m
+Author: erfan <erfan.esmaili1382@gmail.com>
+Date:   Fri May 9 20:13:59 2025 +0330
+
+    add screenshots
+
+[33mcommit 72f348e2d10dc09c9b039ad128785c93a1986a55[m
+Author: erfan <erfan.esmaili1382@gmail.com>
+Date:   Fri May 9 20:08:48 2025 +0330
+
+    add screenshots
+
+[33mcommit 0bfa337376ef74ba3cfeee18d25457a8f61c558c[m
+Author: erfan <erfan.esmaili1382@gmail.com>
+Date:   Fri May 9 20:03:44 2025 +0330
+
+    Update README.md
+
+[33mcommit 79d9ec75361f7fd33b36f45eb9c31f6819f73622[m
+Author: erfan <erfan.esmaili1382@gmail.com>
+Date:   Fri May 9 19:38:20 2025 +0330
+
+    Create README.md
+
+[33mcommit f4b289f964bc1029f747fc8d3d0c024d70e435bd[m
+Author: erfan <erfan.esmaili1382@gmail.com>
+Date:   Fri May 9 12:50:31 2025 +0330
+
+    fix fonts
+
+[33mcommit 07922c3172551e7cad3baa74036885ef2d94143c[m
+Merge: baa8d33 4aab3d7
+Author: erfan <erfan.esma1382@gmail.com>
+Date:   Fri May 9 12:32:13 2025 +0330
+
+    fix details
+
+[33mcommit baa8d3347551722fedec6c3c0e42e084db16867d[m
+Author: erfan <erfan.esma1382@gmail.com>
+Date:   Fri May 9 12:30:44 2025 +0330
+
+    fix details
+
+[33mcommit 4aab3d74452a7e3e271457a9d2a822add5a94d79[m
+Author: erfan <erfan.esmaili1382@gmail.com>
+Date:   Wed May 7 21:46:52 2025 +0330
+
+    fix fonts
+
+[33mcommit dc27ef40d1e3befc000104a866d4ed15e02155bb[m
+Merge: 539ecf4 ff0c9da
+Author: erfan <erfan.esma1382@gmail.com>
+Date:   Wed May 7 21:32:48 2025 +0330
+
+    fix timer
+
+[33mcommit 539ecf4840956459f7394ba72681e339639c1233[m
+Author: erfan <erfan.esma1382@gmail.com>
+Date:   Wed May 7 21:26:05 2025 +0330
+
+    fix timer
+
+[33mcommit ff0c9da0222ac3faae8bf0014cc93140a844ae06[m
+Author: erfan <erfan.esmaili1382@gmail.com>
+Date:   Wed May 7 11:42:28 2025 +0330
+
+    fix font paths
+
+[33mcommit 1145b17ecc8ff75ec14e6487ecc153e8fa9970d5[m
+Author: erfan <erfan.esma1382@gmail.com>
+Date:   Wed May 7 02:09:31 2025 +0330
+
+    Fix font paths for GitHub Pages
+
+[33mcommit bdf0cfcf808aa059b2a514084eefe3eaf9a53183[m
+Merge: 8fabf2c b81c451
+Author: erfan <erfan.esma1382@gmail.com>
+Date:   Wed May 7 01:37:25 2025 +0330
+
+    Resolve merge conflicts
+
+[33mcommit 8fabf2c20c77dc32ff373065a5b29eb9be70f1e0[m
+Author: erfan <erfan.esma1382@gmail.com>
+Date:   Wed May 7 01:16:24 2025 +0330
+
+    first commit
+
+[33mcommit b81c45181de1092ea763be646915297e006e93d6[m
+Author: erfan <erfan.esmaili1382@gmail.com>
+Date:   Tue May 6 23:37:23 2025 +0330
+
+    Initial commit
