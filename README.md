@@ -58,6 +58,9 @@
 
 ### 🛒 Shopping Cart
 ![Mobile View](screenshots/view0.png)
+
+<br>
+
 ![Mobile View](screenshots/view11.png)
 
 
@@ -66,7 +69,14 @@
 
 ### 🛍️ Product Page
 ![Mobile View](screenshots/view4.png)
+
+<br>
+
 ![Mobile View](screenshots/view7.png)
+
+<br>
+
+
 ![Mobile View](screenshots/view6.png)
 
 <br>
