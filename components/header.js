@@ -949,7 +949,18 @@ class Header extends HTMLElement {
             e.preventDefault();
             offcanvas.toggle();
           });
+
+            
         });
+ //!! دکمه بستن دستی (چون data-bs-dismiss در Shadow DOM کار نمی‌کنه)
+ const closeBtn = this.shadowRoot.querySelector('.btn-close');
+ if (closeBtn) {
+   closeBtn.addEventListener("click", () => {
+     offcanvas.hide();
+   });
+ }
+
+
 
       // مدیریت تغییر محتوا در Offcanvas
       const handleOffcanvasContent = (showSort = true) => {

@@ -45,7 +45,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const siteHeader = utils.getSiteHeader();
   const badgeBasket = utils.getBadgeBasket();
   const productTag = utils.getProductTags();
-
+  
 
 
   //select img
@@ -201,13 +201,13 @@ window.addEventListener("DOMContentLoaded", () => {
     let priceProductText = price.textContent.trim();
     let priceProductNumber = +priceProductText.replace(/,/g, "");
     let countProduct = parseInt(numberProduct.textContent);
-    // let count = (numberProduct.textContent = typeNumber + 1);
     for (let i = 0; i < countProduct; i++) {
-      arrayPriceProduct.push(priceProductNumber);
+      utils.calculateSumPrice()
     }
+console.log(arrayPriceProduct);
 
-    let total = arrayPriceProduct.reduce((total, num) => total + num, 0);
-    priceSum.textContent = total.toLocaleString("en-US");
+    // let total = arrayPriceProduct.reduce((total, num) => total + num, 0);
+    // priceSum.textContent = total.toLocaleString("en-US");
 
     let showToast = false;
     if (badgeBasket.length > 0) {

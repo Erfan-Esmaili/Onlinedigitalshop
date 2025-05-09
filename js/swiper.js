@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper_product_container", {
         dynamicBullets: true, // فعال کردن داینامیک بولت‌ها
     },
     autoplay: {
-                delay: 1000,  // ۱۰۰۰ میلی‌ثانیه یا ۱ ثانیه
+                delay: 2100,  // 2100۰۰ میلی‌ثانیه یا ۱ ثانیه
                 disableOnInteraction: false,
             },
   breakpoints: {
@@ -39,7 +39,7 @@ var swiper = new Swiper(".mySwiper", {
         dynamicBullets: true, // فعال کردن داینامیک بولت‌ها
     },
     autoplay: {
-                delay: 1000,  // ۱۰۰۰ میلی‌ثانیه یا ۱ ثانیه
+                delay: 1700,  // ۱۰۰۰ میلی‌ثانیه یا ۱ ثانیه
                 disableOnInteraction: false,
             },
   breakpoints: {

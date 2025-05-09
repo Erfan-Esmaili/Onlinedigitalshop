@@ -731,7 +731,6 @@ span {
   width: 23%;
   height: 275px;
   padding: 0;
-  /* margin: auto 0; */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -743,7 +742,6 @@ span {
   height: 65%;
   position: relative;
   overflow: hidden;
-  transition: all 0.5s ease-in-out;
   cursor: pointer;
   border-radius: 10px 10px 0 0;
 }
@@ -756,7 +754,7 @@ span {
   height: 100%;
   background-position: center;
   background-size: cover;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 
 }
 .blog_item:nth-child(1) .blog_img::before {
@@ -777,7 +775,7 @@ span {
 }
 
 .blog_txt p:last-child {
-  font-size: clamp(15px, 2vw, 19px) !important;
+  font-size: clamp(15px, 1.2vw, 1.7rem) !important;
 }
 .swiper-wrapper_blog {
   height: 19rem;

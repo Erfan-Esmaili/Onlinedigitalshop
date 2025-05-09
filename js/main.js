@@ -59,7 +59,7 @@ window.addEventListener("DOMContentLoaded", () => {
     badgeBasket
   );
 
-  utils.handleProductBody;
+  utils.handleProductBody(productBody, priceSum ,badgeBasket);
 
   //?? viewShoppingCart & send product to basketpage
 
