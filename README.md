@@ -1,7 +1,14 @@
 
 # 🛒 Online Digital Shop
 
-> 🧩 A responsive, modular, and component-based project designed for scalability and ease of maintenance across all devices.
+> 🧩 **A project with:**
+> 
+> - Responsive design  
+> - Modular architecture  
+> - Component-based structure  
+> - Scalability in mind  
+> - Easy maintenance  
+> - Compatibility across all devices
 
 
 
