@@ -390,9 +390,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </div>
     <div class="w-100 search_box_content d-flex justify-content-center align-items-center">
       <div
-        class="search_box_responsive border rounded rounded-5 pe-3 position-relative bg-white d-flex justify-content-center align-items-center py-1">
+        class="search_box_responsive border rounded rounded-5 pe-3 position-relative bg-white d-flex justify-content-center align-items-center gap-3  py-1">
         <input type="text" placeholder="جستجوی محصولات..."
-          class="rounded rounded-5 p-1 border-0 border-opacity-25">
+          class="rounded rounded-5 p-1 border-0 border-opacity-25 bg-transparent">
 
         <button class="search_icon ms-1 mt-0 border-0">
           <i class="fas fa-search text-white d-flex align-items-center justify-content-center"></i>
@@ -716,7 +716,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!-- search input -->
       <div class="w-50 d-flex justify-content-center align-items-center">
 
-        <div class="search_box border rounded rounded-5 px-3 w-100 position-relative">
+        <div class="search_box border rounded rounded-5 px-3 gap-3 w-100 position-relative">
           <input type="text" placeholder="جستجوی محصولات..."
             class="rounded rounded-5 p-1 border-0 border-opacity-25">
 

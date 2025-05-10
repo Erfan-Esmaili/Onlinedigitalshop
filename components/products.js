@@ -46,20 +46,15 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                 </span>
                 <!--  -->
                 <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="bg-secondary" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-secondary active" aria-label="Slide 2" aria-current="true"></button>
-                    <button type="button" class="bg-secondary" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
                   <div class="carousel-inner">
-                    <div class="carousel-item" data-bs-interval="1000">
-                      <img src="" class="d-block w-100 img1" alt="...">
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img src="" class="d-block w-100 img1" alt="img">
                     </div>
-                    <div class="carousel-item active" data-bs-interval="1000">
-                      <img src="" class="d-block w-100 img2" alt="...">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                      <img src="" class="d-block w-100 img2" alt="img">
                     </div>
-                    <div class="carousel-item" data-bs-interval="1000">
-                      <img src="" class="d-block w-100 img3" alt="...">
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img src="" class="d-block w-100 img3" alt="img">
                     </div>
                   </div>
                 </div>
