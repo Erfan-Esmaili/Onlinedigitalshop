@@ -10,9 +10,8 @@
 > - Easy maintenance  
 > - Compatibility across all devices
 
+[![View Demo](https://img.shields.io/badge/View%20Demo-%20Click-purple?style=for-the-badge&logo=eye)](https://erfan-esmaili.github.io/Onlinedigitalshop/)
 
-
-[![View Demo](https://img.shields.io/badge/View%20Demo-%20Click-green?style=for-the-badge&logo=eye)](https://erfan-esmaili.github.io/Onlinedigitalshop/)
 <br> 
  <br> 
 
